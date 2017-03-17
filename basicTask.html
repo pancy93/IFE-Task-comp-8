@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>基本任务</title>
+	<meta charset="utf-8"/>
+	<meta http-equiv="Access-Control-Allow-Origin" content="*"/>
+	<link rel="stylesheet" href="./src/css/index.css"/>
+  </head>
+  <body>
+    <header>
+	  <a class="focus">基本任务</a>
+	  <a href="./pages/advanceTask.html">进阶任务</a>
+	  <a href="./pages/expertTask.html">高级任务</a>
+	</header>
+	<div class="task">
+	  <form method="post">
+	    <input name="website" id="basic_website" type="text" placeholder="输入您想要查询的网站，格式(www.xxx.com)"/>
+		<input name="library" id="basic_JSlibrary" type="text" placeholder="输入您想要查询的Js库名称"/>
+		<div style="width:100%;text-align:center;">
+		  <input id="basic_submit" type="button" value="搜索"/>
+		</div>
+		<div id="result"><p>查找结果:</p><p></p></div>
+	  </form>
+	</div>
+	<script src="./server/cilent/cilent.js"></script>
+  </body>
+</html>
